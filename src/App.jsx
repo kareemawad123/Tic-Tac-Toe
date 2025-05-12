@@ -60,7 +60,7 @@ function App() {
       <div className="container  m-auto  flex flex-col content-center justify-center">
         <h1 className=" lg:text-9xl md:text-8xl sm:text-7xl text-4xl mb-20 text-center">{status}</h1>
         {/* Board */}
-        <div className="text-center container  bg-accent px-10 sm:px-0" >
+        <div className="text-center container px-10 sm:px-0" >
           <div className="grid grid-cols-3 gap-0 w-full max-w-lg mx-auto">
             <MyButton
               value={squares[0]}
