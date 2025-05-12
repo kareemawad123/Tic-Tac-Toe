@@ -57,11 +57,11 @@ function App() {
   }
   return (
     <>
-      <div className="container  m-auto h-dvh flex flex-col content-center justify-center">
-        <h1 className="text-9xl mb-20 text-center">{status}</h1>
+      <div className="container  m-auto  flex flex-col content-center justify-center">
+        <h1 className=" lg:text-9xl md:text-8xl sm:text-7xl text-4xl mb-20 text-center">{status}</h1>
         {/* Board */}
-        <div className="text-center ">
-          <div>
+        <div className="text-center container  bg-accent px-10 sm:px-0" >
+          <div className="grid grid-cols-3 gap-0 w-full max-w-lg mx-auto">
             <MyButton
               value={squares[0]}
               handleValue={() => {
@@ -80,8 +80,8 @@ function App() {
                 handleValue(2);
               }}
             />
-          </div>
-          <div>
+          </div >
+          <div className="grid grid-cols-3 gap-0 w-full max-w-lg mx-auto">
             <MyButton
               value={squares[3]}
               handleValue={() => {
@@ -101,7 +101,7 @@ function App() {
               }}
             />
           </div>
-          <div>
+          <div className="grid grid-cols-3 gap-0 w-full max-w-lg mx-auto">
             <MyButton
               value={squares[6]}
               handleValue={() => {
@@ -124,7 +124,7 @@ function App() {
         </div>
         {/* Reset & Play Again */}
         <div className=" text-center">
-          <button className="btn btn-xl m-10" onClick={resetBtnFunc}>
+          <button className="btn btn-xl m-10 " onClick={resetBtnFunc}>
             {resetBtnVal}
           </button>
         </div>

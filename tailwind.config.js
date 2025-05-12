@@ -8,7 +8,11 @@ export default {
     "./node_modules/preline/dist/*.js", // Preline content
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xs: '390px', // 👈 defines the `xs` breakpoint
+      },
+    },
   },
   plugins: [
     preline, // Preline plugin
